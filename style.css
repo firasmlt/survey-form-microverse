@@ -28,7 +28,7 @@ body{
     border-radius: 5px;
 }
 
-#survey-form  input, select{
+#survey-form  input, select, textarea{
     padding: 5px 10px;
     outline: none;
     width:70%;
@@ -42,3 +42,11 @@ body{
     font-size: 20px;
     margin:10px 0;
 }
+textarea{
+    height:100px;
+}
+
+#submit{
+    margin-top:10px;
+}
+
