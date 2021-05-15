@@ -28,8 +28,30 @@
         <option value="php">PHP</option>
         <option value='python'>PYTHON</option>
         <option value='java'>JAVA</option>
-        </select>
+        </select><br>
+        <label>What is your gender?</label>
+        <br>
+        <input type="radio" name="radio-buttons" class="radio" value="1">Male</input>
+        <br>
+        <input type="radio" name="radio-buttons" class="radio" value="2">Female</input><br>
+        <div class="labels">
+            <label for="preferences">Do you have any known medical issues? <br>(select all that apply):</label>
+        </div>
+        <div>
+            <ul id="preferences" style="list-style: none;">
+                <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Asthma</input></label></li>
+                <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Parkinsons Disease</input></label></li>
+                <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Heart Failure</input></label></li>
+                <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Yellow fever </input></label></li>
+                <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Other</input></label></li>
+            </ul><br>
+            <label>For any additional questions feel free to leave a comment:</label>
+            <div id="message">
+                <textarea type="message" placeholder="Leave comments here"></textarea>
+            </div>
+            <input type="submit" id="submit"></input>
 
+        </div>
 
     </form>
 </body>
