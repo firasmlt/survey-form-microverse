@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,30 @@
     <title>survey form microverse</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
 </head>
+
 <body>
     <h1 id="title">Survey form (Microverse)</h1>
     <p id="description">This is a microverse project</p>
     <form id="survey-form">
-        <label for="name">Name:</label>
+        <label for="name" id='name-label'>Name:</label>
         <input type="text" id="name" required placeholder="enter your name">
 
-        <label for="name">Email:</label>
-        
+        <label for="name" id="email-label">Email:</label>
+
         <input type="email" id="email" required placeholder="enter your email">
-        <label for="name">Age:</label>
-        <input type="number" id="number" required placeholder="enter your age">
+        <label for="name" id="number-label">Age:</label>
+        <input type="number" id="number" required placeholder="enter your age" min='1' max='2'>
+        <label>Whats your favorite Programming language</label>
+        <select id="dropdown">
+        <option value="php">PHP</option>
+        <option value='python'>PYTHON</option>
+        <option value='java'>JAVA</option>
+        </select>
+
 
     </form>
 </body>
+
 </html>
